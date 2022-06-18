@@ -1,11 +1,16 @@
 <form [formGroup]="reactiveForm">
-  <input type="text" formControlName="username"/>
-		  <input placeholder="Enter your Age" formControlName="age"/>
+  <input
+    type="text"
+    placeholder="username"
+    formControlName="username"
+    formControlName="username"
+  />
+  <br />
+  <input type="password" placeholder="password" formControlName="password" />
+  <br />
   <button type="submit" [disabled]="reactiveForm.invalid">Submit</button>
 </form>
-<br>
-
-
+<br />
 
 <!--
 <app-button-disable-template>-->

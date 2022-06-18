@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.reactiveForm = this.builder.group({
       username: [null, Validators.required],
-      age: [null, Validators.required],
+      password: [null, Validators.required],
     });
   }
 }
