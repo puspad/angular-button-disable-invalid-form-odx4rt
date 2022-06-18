@@ -1,0 +1,12 @@
+<p>
+Submit Button Disable form invalid using template driven form </p>
+
+<form #myForm="ngForm">
+  <div class="form-group">
+    <label>Name</label>
+    <input [(ngModel)]="name"  name="name" type="text"  required>
+    <button [disabled]="myForm.invalid">Submit</button> 
+  </div>
+</form>
+
+Entered value - {{name}}
